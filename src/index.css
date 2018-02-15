@@ -3,3 +3,22 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+
+
+#root {
+  background-color:   white
+}
+
+.bunnyLandText{
+  background-color: violet
+}
+
+.blankSpace{
+  padding: 10px
+}
+
+th{
+  padding: 20px;
+  font-size: 25px;
+  border: solid 10px;
+}

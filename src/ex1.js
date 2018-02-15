@@ -1,7 +1,5 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
-import Button from 'react-bootstrap/lib/Button';
+import React from 'react';
+import './ex1.css';
 //in this file, create a react component that solves the following 
 //javascript problems in the construtor function and then sets
 //the solution in a component template as dictated
@@ -10,7 +8,7 @@ import Button from 'react-bootstrap/lib/Button';
 //until the end of class. Write the number of days in your react html.
 
 //ex 2)using the object:
-class Ex1 extends Component {
+class Ex1 extends React.Component {
   constructor() {
     super();
     var today=new Date();
@@ -22,7 +20,7 @@ class Ex1 extends Component {
     this.daysLeft = (Math.ceil((cmas.getTime()-today.getTime())/(one_day)));
     this.data = {
       "menu": {
-      "id": "file",
+        "id": "file",
         "value": "File",
         "popup": {
           "menuitem": [
@@ -30,23 +28,24 @@ class Ex1 extends Component {
             {"value": "Open", "onclick": "OpenDoc()"},
             {"value": "Close", "onclick": "CloseDoc()"}
           ]
-        }
-      } 
-    }  
+        }  
+      }
+    } 
   }
+
   render() {
-    return (
+    return  (
       <div>
-        <p>"Number of days until school is over: {this.daysLeft}</p>
+        <p className="boldText">Number of days until Code School Ends: {this.daysLeft}</p>
       </div>
-    )  
+    )
   }
 }
 
-export default Ex1;
-    
-  
+export default Ex1
 
+//go through each menuitem and display the "value" in your react html
 
-
+//ex3) using the array.reduce function, multiply all the values in the array [1,2,9]. Display 
+//the end product in your react html (jsx)
 

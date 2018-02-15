@@ -1,15 +1,19 @@
-p {
-    color: bisque;
-    font size: 30;
-    background-color: black;
-} 
-
-
-
 /* typically, each component will get its own directory within ../src/
 create that directory and move this file and your Barf component into that
 directory (you should probably call the directory 'barf'). */
+.landTurtles {
+    font-family: Helvetica;
+    color: blue;
+}
 
+.waterTurtles {
+    font-family: Tahoma;
+    color: blue;
+}
+
+.skyTurtles {
+    font-size: 40px;
+}
 /* Each component shoudl get it's own css file, and any styling changes to 
 any of the html you return in your render method should be dictated there. 
 add some classes to your html in your barf component and set some styles
