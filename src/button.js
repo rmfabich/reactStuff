@@ -1,4 +1,5 @@
 //Using React's state, make a button that increments a counter
+<<<<<<< HEAD
 import React, {Component} from 'react';
 
 export default class Button extends Component {
@@ -35,3 +36,6 @@ export default class Button extends Component {
         )
     }
 }
+=======
+//Display the number on the webpage
+>>>>>>> fb2e3eee017c7b00c7996e4f315808fef870db8b
